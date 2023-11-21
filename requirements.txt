@@ -1,21 +1,15 @@
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-import folium
-from sklearn import preprocessing, cluster
-from sklearn.cluster import KMeans
-from sklearn.metrics import silhouette_score
-import scipy
-from scipy.spatial.distance import cdist
-import math
-import minisom
-import warnings
-warnings.filterwarnings('ignore')
-import streamlit as st
-from streamlit_folium import st_folium,folium_static
+numpy==1.21.2
+pandas==1.3.3
+matplotlib==3.4.3
+seaborn==0.11.2
+folium==0.12.1
+scikit-learn==0.24.2
+scipy==1.7.1
+minisom==2.2.8
+streamlit==1.15.0
+streamlit-folium==0.14.0
+ortools==8.3.1
+spectral-equal-size-clustering==1.0.0
 
-from ortools.constraint_solver import routing_enums_pb2
-from ortools.constraint_solver import pywrapcp
 
 from spectral_equal_size_clustering import SpectralEqualSizeClustering
